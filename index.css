@@ -1,0 +1,16 @@
+@import url(/styles/global.css);
+
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.preview-panel {
+    background-color: var(--shape-body); 
+    padding: 2rem;
+    text-align: center;
+}
+

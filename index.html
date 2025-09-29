@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivite - Crie seu Convite Digital</title>
+    <link rel="stylesheet" href="index.css">
+    </head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<body>
+
+    <main class="app-container">
+
+        <aside class="preview-panel">
+            <div class="preview-panel__content">
+                <img src="/assets/Background.png" alt="Logo Festivite" class="preview-panel__logo">
+                <p class="preview-panel__tagline">Crie um convite digital para o seu evento</p>
+                <div class="preview-panel__image-wrapper">
+                    <img src="/assets/Logo.svg" alt="Pré-visualização do convite com bolo de arco-íris" class="preview-panel__image">
+                </div>
+            </div>
+        </aside>
+
+        <form class="invite-form">
+            <h1 class="">Crie seu convite</h1>
+
+             <fieldset class="event-info">
+                <legend class="form-section__title">Sobre o evento</legend>
+
+                <label for="title" class="form-group__label">Título</label>
+                    <input type="text" id="title" name="title" class="" placeholder="Nome do evento">
+                
+
+                 <div class="form-row">
+                    <div class="form-group">
+                        <label for="start-date" class="form-group__label">Início</label>
+                        <input type="datetime-local" id="start-date" name="start-date" class="form-group-input" placeholder="DD/MM/AAAA, --:--">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="end-date" class="form-group__label">Fim</label>
+                        <input type="datetime-local" id="end-date" name="end-date" class="form-group-input" placeholder="DD/MM/AAAA, --:--">
+                    </div>
+
+                 </div>
+
+                 <div class="form-row">
+                    <div class="form-group">
+                        <label for="event_type">Tipo</label>
+                        
+                        <div class="segmented-control">
+                            <input type="radio" name="segmented-control" id="present" value="present" checked> <label for="event_type">Presencial</label>
+
+                        <div class="segmented-control">
+                            <input type="radio" name="segmented-control" id="online" value="online" checked> <label for="event_type">Online</label>
+
+
+                        </div>
+
+                    </div>
+                    
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="local">Local</label>
+                        <input type="text" name="local" id="local" placeholder="Link ou Local">
+                    </div>
+
+                 </div>
+
+                 <label for="description">Descrição</label>
+                 <textarea name="description" id="description"></textarea>
+
+              
+
+
+
+             </fieldset>
+
+            <fieldset class="customarea">
+                <legend>Personalização</legend>
+
+                <div class="form-group">
+                    <label class="form-group__label">Cor principal</label>
+                    <div class="color-picker">
+                        <label for="color-1">
+                            <input type="radio" name="theme-color" id="color-1">
+                        </label>
+
+                        <label for="color-2">
+                            <input type="radio" name="theme-color" id="color-2">
+                        </label>
+
+                        <label for="color-3">
+                            <input type="radio" name="theme-color" id="color-3">
+                        </label>
+
+                        <label for="color-4">
+                            <input type="radio" name="theme-color" id="color-4">
+                        </label>
+
+                        <label for="color-5">
+                            <input type="radio" name="theme-color" id="color-5">
+                        </label>
+
+                        <label for="color-6">
+                            <input type="radio" name="theme-color" id="color-6">
+                        </label>
+
+                        <label for="color-7">
+                            <input type="radio" name="theme-color" id="color-7">
+                        </label>
+
+                        <label for="color-8">
+                            <input type="radio" name="theme-color" id="color-8">
+                        </label>
+
+                        <label for="color-9">
+                            <input type="radio" name="theme-color" id="color-9">
+                        </label>
+
+                        <label for="color-10">
+                            <input type="radio" name="theme-color" id="color-10">
+                        </label>
+
+                        <label for="color-11">
+                            <input type="radio" name="theme-color" id="color-11">
+                        </label>
+
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-group__label">Tema do evento</label>
+                    <div class="theme-selector">
+                        <div class="box-theme">
+                           <input type="radio" id="aniversario" name="event_theme" value="aniversario" checked>
+                           <label for="aniversario" class="theme-selector__label">
+                           <img src="/assets/images/aniversario.png" alt="Bolo de aniversário" class="theme-selector__image">
+                           <span class="theme-selector__name">Aniversário</span>
+                           </label>
+                        </div>
+                        <div class="box-theme">
+                           <input type="radio" id="infantil" name="event_theme" value="infantil" checked>
+                           <label for="infantil" class="theme-selector__label">
+                           <img src="/assets/images/infantil.png" alt="Bolo de aniversário" class="theme-selector__image">
+                           <span class="theme-selector__name">Infantil</span>
+                           </label>
+                        </div>
+                        </div>
+                </div>
+
+                 </fieldset>
+
+            <fieldset class="form-section">
+                 <legend class="form-section__title">Dados para contato</legend>
+                 </fieldset>
+
+            <div class="form-section">
+                <div class="form-group--checkbox">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+                </div>
+                 </div>
+            
+            <button type="submit" class="cta-button">Gerar convite</button>
+        </form>
+
+    </main>
+
+</body>
+</html>
