@@ -1,16 +1,5 @@
 @import url(/styles/global.css);
+@import url(/styles/aside.css);
+@import url(/styles/event-info.css);
 
-
-.app-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.preview-panel {
-    background-color: var(--shape-body); 
-    padding: 2rem;
-    text-align: center;
-}
 
