@@ -12,18 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <body>
 
-    <main class="app-container">
+<div class="app-container">
 
-        <aside>
-            <div class="aside-content">
-                <img src="./assets/Logo.svg" alt="">
-                <h1>Festivite</h1>
-                <p>Crie um convite digital para o seu evento</p>
-            </div>
-        </aside>
+    <aside>
+        <div class="aside-content">
+            <img src="./assets/Logo.svg" alt="">
+            <h1>Festivite</h1>
+            <p>Crie um convite digital para o seu evento</p>
+        </div>
+    </aside>
+    
+    <main class="invite">
+        
+        <h1>Crie seu convite</h1>
 
         <form class="invite-form">
-            <h1>Crie seu convite</h1>
 
              <fieldset class="event-info" >
                 <div class="row">
@@ -31,43 +34,51 @@
                     <legend class="form-section-title">Sobre o evento</legend>
                 </div>
                     
+                    <div class="text-input">
                      <label for="title" class="titulo">Título</label>
                      <input type="text" id="title" name="title" class="titulo" placeholder="Nome do evento">
+                     </div>
                 
-                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="start-date" class="form-group__label">Início</label>
-                        <input type="datetime-local" id="start-date" name="start-date" class="form-group-input" placeholder="DD/MM/AAAA, --:--">
+                 <div class="row">
+                    <div class="text-input2">
+                        <label for="start-date">Início</label>
+                        <input type="datetime-local" id="start-date" name="start-date" placeholder="DD/MM/AAAA, --:--">
                     </div>
 
-                    <div class="form-group">
-                        <label for="end-date" class="form-group__label">Fim</label>
-                        <input type="datetime-local" id="end-date" name="end-date" class="form-group-input" placeholder="DD/MM/AAAA, --:--">
+                    <div class="text-input2">
+                        <label for="end-date">Fim</label>
+                        <input type="datetime-local" id="end-date" name="end-date" placeholder="DD/MM/AAAA, --:--">
                     </div>
 
                  </div>
 
-                 <div class="form-row">
-                    <div class="form-group">
+                 <div class="row">
+                    <div class="event-type">
                         <label for="event_type">Tipo</label>
                         
-                        <div class="segmented-control">
-                            <input type="radio" name="segmented-control" id="present" value="present" checked> <label for="event_type">Presencial</label>
+                    <div class="selector-event-type">
 
                         <div class="segmented-control">
-                            <input type="radio" name="segmented-control" id="online" value="online" checked> <label for="event_type">Online</label>
+                            <input type="radio" name="segmented-control" id="present" value="present"checked>
+                            <img src="./assets/icons/building.svg" alt="">
+                             <label for="event_type">Presencial</label>
+                        </div>
+                            <div class="segmented-control">
+                            <input type="radio" name="segmented-control" id="online" value="online" checked>
+                            <img src="/assets/icons/video.svg" alt="">
+                            <label for="event_type">Online</label>
 
 
                         </div>
 
-                    </div>
+                        </div>
                     
 
                     </div>
 
-                    <div class="form-group">
+                    <div class="event-local">
                         <label for="local">Local</label>
-                        <input type="text" name="local" id="local" placeholder="Link ou Local">
+                        <input type="text" name="local" id="local" placeholder="Link ou endereço">
                     </div>
 
                  </div>
@@ -171,6 +182,6 @@
         </form>
 
     </main>
-
+</div>
 </body>
 </html>

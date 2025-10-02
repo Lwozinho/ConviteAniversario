@@ -37,14 +37,26 @@
 
 body {
     background-color: var(--shape-background);
+    input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none; 
+    -webkit-appearance: none;
+   
 }
 
 .app-container {
-display: inline-flex;
-padding: 20px 20px 0 20px;
-justify-content: center;
-align-items: flex-start;
-gap: 2rem;
+     display: flex;
+    min-height: 100vh;
+    padding: 2rem;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+
+
+    
+    
 }
+}
+
 
 

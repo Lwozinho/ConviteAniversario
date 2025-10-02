@@ -1,43 +1,147 @@
-.invite-form {
-    display: flex;
-    width: 51.25rem;
-    padding: 5rem 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-    border-radius: 0.75rem;
-    border: 20px solid var(--shape-background);
-    
-    .event-info {
-        
+.invite {
 
-    h1{
+        h1 {
+        margin-left: 9.38rem;
         width: 35rem;
         color: var(--text-heading);
         font-family: 'Baloo 2';
         margin-top: 5rem;
         margin-bottom: 2.5rem;
     }
+}
 
-    .row {
+
+.invite-form {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    width: 100%;
+    padding: 5rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
 
-    .form-section-title {
-        padding-top: 1.5rem;
-        color: var(--text-heading);
-        font-family: "Baloo 2";
-        margin-bottom: 1.5rem;
-        font-weight: 700;
-        font-size: 1.125rem;
-     }
-    }
 
     
+    .event-info {
+        display: flex;
+        width: 35rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
 
+        .row {
+            width: 100%;
+            display: flex;
+            gap: 0.75rem;
+            
+            .form-section-title {
+                padding-top: 1.5rem;
+                color: var(--text-heading);
+                font-family: "Baloo 2";
+                margin-bottom: 1.5rem;
+                font-size: 1.125rem;
+            }
+        }
 
+    .text-input {
+        color: var(--input-placeholder);
+        display: flex;
+        width: 35rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
 
+        input {
+            height: 3rem;
+            padding: 0 1rem;
+            align-items: center;
+            align-self: stretch;
+            border-radius: 0.5rem;
+            border: 1px solid var(--input-stroke);
+            background: var(--input-base);
+            
+        }
+
+    }
+
+    .text-input2, .event-type {
+        font-family: "Open Sans";
+        font-size: 0.875rem;
+        color: var(--text-body);
+        display: flex;
+        width: 17rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+
+        input {
+            height: 3rem;
+            padding: 0 1rem;
+            align-items: center;
+            align-self: stretch;
+            border-radius: 0.5rem;
+            border: 1px solid var(--input-stroke);
+            background: var(--input-base);
+            color: var(--input-placeholder);
+            
+        }
+        
+    }
+
+    .selector-event-type{
+        width: 100%;
+        display: flex;
+        height: 2.5rem;
+        padding: 0.25rem;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(---input-stroke);
+        background: var(--input-base);
+        border-radius: 0.5rem;
+        gap: 0.5rem;
+
+        .segmented-control {
+    display: flex;
+    height: 2.5rem;
+    padding: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+
+            
+    
+        input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            
+        }
+        
+        img {
+            width: 1rem;
+            height: 1rem;
+        }
+        }
+    }
+    
+
+    .event-local {
+        display: flex;
+        flex-direction: column;
+
+        color: var(--text-body);
+        font-family: "Open Sans";
+        font-size: 0.875rem;
+
+        input {
+            width: 17rem;
+            height: 3rem;
+            padding: 0 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--input-stroke);
+            background: var(--input-base);
+        }
+    }
 
 }
 }
