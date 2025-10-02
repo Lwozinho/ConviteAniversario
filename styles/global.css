@@ -12,6 +12,7 @@
       --lime: #e1ff59;
       --green: #59ff91;
       --navy: #6a59ff;
+      --cyan: #59FFF9;
 
       --danger: #ff5959;
 
@@ -51,6 +52,7 @@ body {
     gap: 2rem;
     width: 100%;
     box-sizing: border-box;
+    
 
 
     
